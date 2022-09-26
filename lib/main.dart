@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        primaryColor: Colors.indigo[400],
         appBarTheme: AppBarTheme(
           color: Colors.indigo[400],
         ),
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
           title: const Text(
             "Expense Tracker",
           ),
+          actions: [Icon(Icons.call), Icon(Icons.video_call)],
           centerTitle: true,
         ),
       ),
